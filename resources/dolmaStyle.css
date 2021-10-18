@@ -1,0 +1,58 @@
+html{
+    background-color: rgb(92, 1, 92);
+    /*color: white;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#mealName{
+    align-self: flex-end;
+    justify-self : center;
+    font-size : 106px;
+    grid-area: top1;
+    color: rgb(255, 155, 88);
+}
+#recipeList{
+    grid-area: mid2;
+    
+    text-justify: center;
+    font-size: 46px;
+    color: rgb(255, 155, 88);
+}
+#description{
+    grid-area:mid1;
+    font-size: 46px;
+    color: rgb(255, 155, 88);
+    
+}
+#thePic{
+    display:flex;
+    grid-area: top2;
+    height: 400px;
+    justify-self: left;
+    flex-grow:1;
+}
+#container{
+    grid-template-rows : 1fr 1fr;
+    grid-template-columns: auto auto;
+    display: grid;
+    grid-template-areas: "top1 top2 "
+    "mid1 mid2";
+    height : 96vh;
+}
+
+.homeBtn{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:20px;
+	right:40px;
+	background-color:rgb(255, 155, 88);
+	color:#FFF;
+	border-radius:50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+#homeIcon{
+    margin-top:15px;
+    width: 40px;
+}

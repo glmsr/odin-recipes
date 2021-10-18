@@ -1,0 +1,43 @@
+html{
+    background-color: rgb(92, 1, 92);
+    /*color: white;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#odin{
+    align-self: flex-end;
+    justify-self : center;
+    font-size : 146px;
+    grid-area: top1;
+    color: rgb(255, 155, 88);
+}
+#recipeList{
+    grid-area: mid2;
+    align-self: center;
+    text-justify: center;
+    font-size: 46px;
+    color: rgb(255, 155, 88);
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 155, 88);
+}
+#description{
+    grid-area:mid1;
+    font-size: 46px;
+    color: rgb(255, 155, 88);
+    
+}
+#theGif{
+    grid-area: top2;
+    height: 450px;
+    border-radius: 3%
+}
+#container{
+    grid-template-rows : 1fr 1fr;
+    grid-template-columns: auto auto;
+    display: grid;
+    grid-template-areas: "top1 top2 "
+    "mid1 mid2";
+    height : 96vh;
+}
